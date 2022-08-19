@@ -1,3 +1,16 @@
-import { IDataSource } from "./DataSource";
+import { injectable } from "tsyringe";
+import { CartItem } from "../models/CartItem";
+import { DataSource } from "./DataSource";
 
-export default class MongoDBService implements IDataSource {}
+@injectable()
+export default class MongoDBService {
+  constructor(database: DataSource) {
+    this.database = database;
+  }
+
+  private database: DataSource;
+
+  getAllItems(): CartItem[] {
+    return this.database.getAllItems();
+  }
+}

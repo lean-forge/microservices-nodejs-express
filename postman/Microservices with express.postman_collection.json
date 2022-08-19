@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "5cc061ec-3208-4cf2-b52b-8b03fdc8274f",
+		"name": "Microservices with express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4577673"
+	},
+	"item": [
+		{
+			"name": "POST CartController",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET CartController",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
